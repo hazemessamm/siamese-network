@@ -30,7 +30,7 @@ flatten = layers.Flatten()(base_cnn.output)
 dense1 = layers.Dense(512, activation='relu')(flatten)
 dense1 = layers.BatchNormalization()(dense1)
 dense2 = layers.Dense(256, activation='relu')(dense1)
-dense2 = layers.BatchNormalization()(dense2)
+dense2 = layers.Dropout(0.25)(dense2)
 output = layers.Dense(256)(dense2)
 
 embedding = Model(base_cnn.input, output, name='SiameseNetwork')
