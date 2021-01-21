@@ -2,7 +2,7 @@ from tensorflow.keras import losses, layers
 
 '''
 Cosine Similarity Layer
-This layer just computes how similar to feature vectors are by computing it using the Cosine Similarity We override the call method and implement our own call method.
+This layer just computes how similar two feature vectors are by computing it using the Cosine Similarity We override the call method and implement our own call method.
 
 Check out https://www.tensorflow.org/api_docs/python/tf/keras/losses/CosineSimilarity
 
